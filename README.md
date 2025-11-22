@@ -67,6 +67,11 @@ Product Listing Page:
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/b35b80d4-027c-4097-a515-72cfb4b11a3c" />
 
 
+Product Filters:
+
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/408a5d83-9372-4064-885f-616bcce3b207" />
+
+
 Product Order Page:
 
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/ac14f9b6-775a-4b38-83de-54139312024e" />
