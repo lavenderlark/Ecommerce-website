@@ -30,7 +30,6 @@ function renderCategories() {
   });
 }
 
-// Initialize homepage
 renderCategories();
 updateCartBadge();
 
@@ -123,10 +122,8 @@ function checkout() {
     return;
   }
   
-  // Clear cart after checkout
   saveCart([]);
   
-  // Redirect to order page
   window.location.href = 'order.html';
 }
 

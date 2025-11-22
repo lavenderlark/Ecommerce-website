@@ -84,14 +84,13 @@ function populateCategories() {
   // Set initial category from URL parameter
   if (categoryParam) {
     categoryFilter.value = categoryParam;
-    // Update header immediately when arriving from category click
     updatePageHeader(categoryParam);
   } else {
     updatePageHeader('');
   }
 }
 
-// Filter products (WITHOUT updating header unless from URL)
+// Filter products
 function filterProducts() {
   const searchTerm = searchInput.value.toLowerCase();
   const selectedCategory = categoryFilter.value;
@@ -192,13 +191,10 @@ sortBy.addEventListener('change', () => {
 applyFilterBtn.addEventListener('click', () => {
   const selectedCategory = categoryFilter.value;
   
-  // Update header ONLY when Apply Filters is clicked
   updatePageHeader(selectedCategory);
   
-  // Then filter products
   filterProducts();
   
-  // Close filter panel
   filterPanel.classList.remove('show');
   filterToggleBtn.classList.remove('active');
 });
@@ -235,17 +231,14 @@ function checkout() {
     alert('Your cart is empty!');
     return;
   }
-  
-  // Clear cart after checkout
+
   saveCart([]);
-  
-  // Redirect to order page
+
   window.location.href = 'order.html';
 }
 
-// Initialize - IMPORTANT: This runs when page loads
-populateCategories();  // This sets up the dropdown AND updates header from URL
-filterProducts();      // This filters products based on URL parameter
+populateCategories();  
+filterProducts();      
 updateCartBadge();
 
 // Cart modal functionality

@@ -1,13 +1,10 @@
 // js/detail.js - Product Details JavaScript
 
-// Get product ID from URL
 const urlParams = new URLSearchParams(window.location.search);
 const productId = parseInt(urlParams.get('id'));
 
-// Find product
 const product = products.find(p => p.id === productId);
 
-// Render product detail
 function renderProductDetail() {
   const detailContainer = document.getElementById('productDetail');
   
@@ -64,20 +61,15 @@ function addToCart(productId) {
 function buyNow(productId) {
   const product = products.find(p => p.id === productId);
   if (!product) return;
-  
-  // Get current cart
+
   let cart = getCart();
   
-  // Remove this specific product from cart (if it exists)
   cart = cart.filter(item => item.id !== productId);
   
-  // Save updated cart (without the bought product)
   saveCart(cart);
-  
-  // Update cart badge
+
   updateCartBadge();
   
-  // Redirect to order page
   window.location.href = 'order.html';
 }
 
@@ -174,10 +166,8 @@ function checkout() {
     return;
   }
   
-  // Clear entire cart when checking out from cart modal
   saveCart([]);
   
-  // Redirect to order page
   window.location.href = 'order.html';
 }
 
