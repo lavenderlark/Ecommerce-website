@@ -56,19 +56,25 @@ ShopEase/
 - Product images from the internet
 
 ## Screenshots
-#Home Page:
+
+Home Page:
+
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/b760c53b-abb9-4aeb-ac79-208f1348e360" />
 
-#Product Listing Page:
+Product Listing Page:
+
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/b35b80d4-027c-4097-a515-72cfb4b11a3c" />
 
-#Product Order Page:
+Product Order Page:
+
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/ac14f9b6-775a-4b38-83de-54139312024e" />
 
-#Add to cart:
+Add to cart:
+
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/f385c321-3139-4a0f-951d-e1ee818b4712" />
 
-#Order Success Page:
+Order Success Page:
+
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/d5854bb5-1f6c-48a6-90d2-adb44bc435e3" />
 
 ## Credits
