@@ -1,0 +1,68 @@
+
+# ShopEase – Simple E-Commerce Website
+
+## About
+
+ShopEase is a responsive multi-page e-commerce demo built with plain HTML, CSS, and JavaScript.  
+It features a modern design and a smooth shopping flow, including homepage navigation, product listings by category, filter/sort options, a working cart, and an order confirmation page—all styled with a purple theme.
+
+## Features
+
+-Multi-page navigation: Homepage, Products, Product Details, Cart, Checkout
+-Header with logo and cart badge on every page
+-Hero section with a “Shop Now” button leading to product listing
+-Product cards: name, image, price, rating, add-to-cart
+-Cart: add/remove items, change quantities, view total
+-Filters: by category and by rating (3★+, 4★+, etc.)
+-Sort options: price, rating, name
+-Buy Now or Checkout places order and removes item(s) from cart
+-Responsive layout with Flexbox and CSS Grid
+-Runs on plain HTML, CSS, and JavaScript—no frameworks
+
+## Structure
+
+```
+ShopEase/
+├── index.html
+├── products.html
+├── details.html
+├── order.html
+│
+├── css/
+│   └── style.css
+│
+└── js/
+    ├── data.js
+    ├── cart.js
+    ├── main.js
+    ├── products.js
+    └── detail.js
+```
+
+## Usage
+
+- Download or clone all files and open `index.html` in your browser.
+- Browse categories on the homepage; clicking a category shows only those products.
+- Use filters or sorting to customize the product list.
+- Clicking Add to Cart or Buy Now updates the cart, and the cart can be managed from any page.
+- Placing an order via Buy Now or Checkout shows the success page.
+
+> No installation or dependencies—everything runs in the browser.
+
+## Technologies
+
+- HTML5
+- CSS3 (Flexbox & CSS Grid)
+- JavaScript (basic, with arrays and DOM manipulation)
+- Product images from the internet
+
+## Screenshots
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/b760c53b-abb9-4aeb-ac79-208f1348e360" />
+
+
+
+## Credits
+
+Made by Beulah Miraclin B  
+You can reach me at beulahmiraclin.26csa@licet.ac.in with feedback or questions.
+
