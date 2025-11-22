@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - ShopEase</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-left">
+        <a href="index.html" class="logo">
+          <span class="logo-text">ShopEase</span>
+        </a>
+      </div>
+      <nav class="navbar-center">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link active">Products</a>
+      </nav>
+      <div class="navbar-right">
+        <button class="cart-btn" id="cartBtn">
+          <span class="cart-text">Cart</span>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Cart Modal -->
+  <div class="cart-modal" id="cartModal">
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-content">
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button class="close-btn" id="closeCart">&times;</button>
+      </div>
+      <div class="cart-body" id="cartBody"></div>
+      <div class="cart-footer">
+        <button class="btn btn-secondary" id="clearCartBtn">Clear Cart</button>
+        <button class="btn btn-primary" id="checkoutBtn">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <div class="page-header-products">
+    <div class="page-header-overlay"></div>
+    <div class="container">
+      <div class="page-header-content">
+        <h1 id="pageTitle">Discover Our Collection</h1>
+        <p class="page-subtitle">Find products you'll love</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Filters -->
+  <div class="container">
+    <div class="filter-bar">
+      <button class="filter-toggle-btn" id="filterToggleBtn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
+        Filter
+      </button>
+      <div class="filter-bar-right">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Search products...">
+        </div>
+        <div class="sort-box">
+          <label for="sortBy">Sort By:</label>
+          <select id="sortBy">
+            <option value="default">Default</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="rating">Rating: High to Low</option>
+            <option value="name">Name: A to Z</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-panel" id="filterPanel">
+      <div class="filter-panel-content">
+        <div class="filter-item">
+          <label for="categoryFilter">Category:</label>
+          <select id="categoryFilter">
+            <option value="">All Categories</option>
+          </select>
+        </div>
+        <div class="filter-item">
+          <label for="ratingFilter">Min Rating:</label>
+          <select id="ratingFilter">
+            <option value="">Any Rating</option>
+            <option value="4">4★ & above</option>
+            <option value="3">3★ & above</option>
+          </select>
+        </div>
+        <button class="btn btn-primary apply-filter-btn" id="applyFilterBtn">Apply Filters</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Products -->
+  <div class="container">
+    <div class="product-grid" id="productGrid"></div>
+    <div class="no-results" id="noResults">
+      <div class="no-results-icon">🔍</div>
+      <h3>No products found</h3>
+      <p>Try adjusting your filters or search terms</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Policies</h4>
+          <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2025 ShopEase. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/products.js"></script>
+
+</body>
+</html>
